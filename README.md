@@ -2,11 +2,18 @@
 ## Part I
 - Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
 - Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге.
+  git init - создание пустого локального репозитория
+  git add - добваить файл в локальный репозиторий
+  git commit - запись изменений в репозитории
+  git branch -M main - создание новой ветки
+  git remote add - добавление удалённого репозитория
+  git push -u origin main - отправка изменений в удалённый репозиторий
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/1.png)
   ![](https://github.com/sippyuy/timp2/blob/main/screens/2.png)
   
 - Создайте файл hello_world.cpp в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу Hello world на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку using namespace std;.
+  touch - создание файла с нужным именем
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/3.png)
   ![](https://github.com/sippyuy/timp2/blob/main/screens/4.png)
@@ -24,6 +31,7 @@
   ![](https://github.com/sippyuy/timp2/blob/main/screens/7.png)
   
 - Закоммитьте новую версию программы. Почему не надо добавлять файл повторно git add?
+  git status - состояние рабочего каталога
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/8.png)
   
@@ -37,6 +45,7 @@
   
 ## Part II
 - В локальной копии репозитория создайте локальную ветку patch1.
+  git checkout - переключиться на нужную ветку
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/11.png)
   
@@ -75,10 +84,12 @@
   ![](https://github.com/sippyuy/timp2/blob/main/screens/21.png)
   
 - Локально выполните pull.
+  git pull - синхронизация с удалённым репозиторием
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/22.png)
   
 - С помощью команды git log просмотрите историю в локальной версии ветки master.
+  git log - просмотр истории ветки
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/23.png)
   
@@ -92,6 +103,7 @@
   ![](https://github.com/sippyuy/timp2/blob/main/screens/25.png)
   
 - Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
+  clang-format - изменение стиля кода
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/26.png)
   
@@ -109,6 +121,7 @@
   
 - Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
 - Сделайте force push в ветку patch2
+  git rebase - наложение коммитов поверх других базовых коммитов
   
   ![](https://github.com/sippyuy/timp2/blob/main/screens/30.png)
   
